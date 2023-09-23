@@ -133,7 +133,9 @@
     .button img {
         top: 0.125rem;
     }
+}
 
+@media (hover: hover) and (pointer: fine) {
     .button:hover {
         box-shadow: 0 0 30px 8px hsla(150, 100%, 66%, 0.5);
         cursor: pointer;
