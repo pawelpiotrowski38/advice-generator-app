@@ -8,6 +8,7 @@
     padding-bottom: 0;
     border-radius: 0.625rem;
     background-color: var(--dark-grayish-blue);
+    box-shadow: 25px 40px 65px 40px hsla(218, 23%, 15%, 0.3);
 }
 
 .advice-number {
@@ -19,12 +20,16 @@
 }
 
 .advice-text {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1875rem;
     color: var(--light-cyan);
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.375;
     letter-spacing: -0.325px;
+}
+
+.divider {
+    margin-bottom: -0.25rem;
 }
 
 .button {
@@ -41,4 +46,39 @@
 .button img {
     position: relative;
     top: 0.0625rem;
+}
+
+@media screen and (min-width: 33.75em) {
+    .main {
+        width: 540px;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        padding: 3.0625rem 2.5rem;
+        padding-bottom: 0;
+        border-radius: 0.9375rem;
+    }
+
+    .advice-number {
+        margin-bottom: 1.5rem;
+        font-size: 0.8125rem;
+        letter-spacing: 4px;
+    }
+
+    .advice-text {
+        margin-bottom: 2.4375rem;
+        font-size: 1.75rem;
+        line-height: 1.365;
+    }
+
+    .divider {
+        margin-bottom: 0.25rem;
+    }
+
+    .button {
+        left: 0;
+    }
+
+    .button img {
+        top: 0.125rem;
+    }
 }
