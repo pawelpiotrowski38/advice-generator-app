@@ -41,6 +41,12 @@
     border: none;
     border-radius: 50%;
     background-color: var(--neon-green);
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    box-shadow: 0 0 30px 10px hsla(150, 100%, 66%, 0.35);
+    cursor: pointer;
 }
 
 .button img {
