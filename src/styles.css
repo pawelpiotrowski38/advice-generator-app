@@ -1,4 +1,5 @@
 .main {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,6 +10,18 @@
     border-radius: 0.625rem;
     background-color: var(--dark-grayish-blue);
     box-shadow: 25px 40px 65px 40px hsla(218, 23%, 15%, 0.3);
+}
+
+.advice-container {
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.advice-container--hidden {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .advice-number {
@@ -35,13 +48,12 @@
 .button {
     position: relative;
     top: 2rem;
-    left: -0.0625rem;
     width: 4rem;
     height: 4rem;
     border: none;
     border-radius: 50%;
     background-color: var(--neon-green);
-    transition: all 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .button:hover {
@@ -52,6 +64,45 @@
 .button img {
     position: relative;
     top: 0.0625rem;
+}
+
+.loading-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.loading-container--visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border: 0.25rem solid var(--light-cyan);
+    border-radius: 50%;
+    border-top-color: var(--dark-grayish-blue);
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
 }
 
 @media screen and (min-width: 33.75em) {
