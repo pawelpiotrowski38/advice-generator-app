@@ -1,7 +1,6 @@
 :root {
     --light-cyan: hsl(193, 38%, 86%);
     --neon-green: hsl(150, 100%, 66%);
-    --white: hsl(0, 0%, 100%);
     --grayish-blue: hsl(217, 19%, 38%);
     --dark-grayish-blue: hsl(217, 19%, 24%);
     --dark-blue: hsl(218, 23%, 16%);
@@ -22,7 +21,7 @@ html {
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     height: 100%;
     /* min-height: 990px; */
     /* margin: 0;
